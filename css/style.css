@@ -1,6 +1,9 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 /*  global rules */
 * {
-  font-family: Exo, sans-serif;
+  font-family: "Play", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -123,11 +126,23 @@ h3 {
   font-weight: 700;
 }
 
-header,
 section,
 footer {
   padding-block: 80px;
   scroll-margin: 24px;
+}
+
+.border-1{
+  border: 1px solid #000;
+}
+
+.border-2{
+  border: 2px solid #000;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
 }
 
 /* title */
@@ -139,8 +154,8 @@ footer {
   color: #000000;
   position: relative;
 }
-.container .title h2::after{
-  content: '';
+.container .title h2::after {
+  content: "";
   position: absolute;
   width: 100px;
   height: 10px;
@@ -150,4 +165,53 @@ footer {
   color: #525252;
   font-size: 20px;
   font-weight: 600;
+}
+/* ----------------------------------------------------------------- */
+
+/* ---------- Header ---------- */
+header {
+  position: fixed;
+  width: 100%;
+  padding-block: 16px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  padding: 8px 24px;
+  background-color: var(--header-background);
+}
+/* logo */
+header .container .logo a {
+  color: var(--header-font-black);
+  font-size:30px;
+  font-weight: 800;
+}
+header .container .logo a span {
+  color: var(--header-font-orange);
+}
+/* nav */
+nav ul {
+  display: flex;
+}
+nav ul li i{
+  font-size: 12px;
+  margin-inline: 16px;
+}
+nav ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--header-font-black);
+}
+nav ul li:hover a{
+  color: var(--header-font-orange);
+}
+/* button */
+button {
+  border-radius: 100px;
+  padding: 8px 16px;
+  background-color: var(--header-button);
+  font-size: 14px;
+  font-weight: 700;
 }
