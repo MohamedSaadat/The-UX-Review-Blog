@@ -1,5 +1,5 @@
 /* font */
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 
 /*  global rules */
 * {
@@ -132,12 +132,24 @@ footer {
   scroll-margin: 24px;
 }
 
-.border-1{
+.border-1 {
   border: 1px solid #000;
 }
 
-.border-2{
+.border-2 {
   border: 2px solid #000;
+}
+
+.shadow-1 {
+  box-shadow: 1px 1px #000;
+}
+
+.shadow-2 {
+  box-shadow: 2px 2px #000;
+}
+
+.shadow-3 {
+  box-shadow: 3px 3px #000;
 }
 
 .container {
@@ -185,33 +197,87 @@ header .container {
 /* logo */
 header .container .logo a {
   color: var(--header-font-black);
-  font-size:30px;
+  font-size: 30px;
   font-weight: 800;
 }
 header .container .logo a span {
   color: var(--header-font-orange);
 }
 /* nav */
-nav ul {
+.header-nav ul {
   display: flex;
 }
-nav ul li i{
+.header-nav ul li i {
   font-size: 12px;
   margin-inline: 16px;
 }
-nav ul li a {
+.header-nav ul li a {
   font-size: 14px;
   font-weight: 600;
   color: var(--header-font-black);
+  transition: 0.2s ease-in-out;
 }
-nav ul li:hover a{
+.header-nav ul li:hover a {
   color: var(--header-font-orange);
 }
 /* button */
-button {
+.header-button {
   border-radius: 100px;
   padding: 8px 16px;
   background-color: var(--header-button);
   font-size: 14px;
   font-weight: 700;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.header-button:hover {
+  transform: translate(3px, 3px);
+}
+/* menu-icon */
+.menu-icon {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: var(--header-background);
+  transition: 0.1s ease-in-out;
+  margin-bottom: 2px;
+  display: none;
+}
+.menu-icon:hover {
+  transform: translate(0, -2px);
+}
+/* menu-slider */
+.menu-slider {
+  background-color: red;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100vh;
+  padding-inline: 16px;
+}
+.menu-slider .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin-block: 16px;
+  padding-block: 8px;
+}
+.menu-slider .head span {
+  font-size: 24px;
+  font-weight: 900;
+}
+.menu-slider .head .icon {
+  padding: 8px;
+}
+.menu-slider-nav {
+}
+.menu-slider-nav ul {
+}
+.menu-slider-nav ul li {
+}
+.menu-slider-nav ul li a {
+}
+.menu-slider-button {
 }

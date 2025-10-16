@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Ux Review Blog</title>
+    <link rel="icon" href="images/favicon.png" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <!-- Header -->
@@ -15,8 +17,9 @@
         <div class="logo">
           <a href="index.html">The UX <span>Review</span></a>
         </div>
+
         <!-- nav -->
-        <nav>
+        <nav class="header-nav">
           <ul>
             <li>
               <a href="#home">HOME</a>
@@ -35,8 +38,49 @@
             </li>
           </ul>
         </nav>
+
         <!-- button -->
-        <button class="border-2">SUBSCRIBE NOW</button>
+        <button class="header-button border-2">SUBSCRIBE NOW</button>
+
+        <!-- menu-icon -->
+        <div class="menu-icon border-2 shadow-3">
+          <i class="fa-solid fa-bars fa-lg" style="color: #000"></i>
+        </div>
+
+        <!-- menu-slider -->
+        <div class="menu-slider">
+          <!-- head -->
+          <div class="head">
+            <span>MENU</span>
+            <div class="icon border-2">
+              <i class="fa-solid fa-xmark fa-lg" style="color: #000"></i>
+            </div>
+          </div>
+
+          <!-- nav -->
+          <nav class="menu-slider-nav">
+            <ul>
+              <li>
+                <a href="#home">HOME</a>
+              </li>
+              <li><i class="fa-solid fa-star" style="color: #d1d5dc"></i></li>
+              <li>
+                <a href="#latest-articles">LATEST ARTICLES</a>
+              </li>
+              <li><i class="fa-solid fa-star" style="color: #d1d5dc"></i></li>
+              <li>
+                <a href="#authors">AUTHORS</a>
+              </li>
+              <li><i class="fa-solid fa-star" style="color: #d1d5dc"></i></li>
+              <li>
+                <a href="#community">COMMUNITY</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- button -->
+          <button class="menu-slider-button border-2">SUBSCRIBE NOW</button>
+        </div>
       </div>
     </header>
     <!-- Home -->
