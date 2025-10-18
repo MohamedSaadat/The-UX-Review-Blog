@@ -1,8 +1,2 @@
 Demo
 https://mohamedsaadat.github.io/The-UX-Review-Blog/
-
-sm    @media all and (max-width: 640px)	    ≥ 640px
-md    @media all and (max-width: 768px)	    ≥ 768px
-lg    @media all and (max-width: 1024px)	≥ 1024px
-xl    @media all and (max-width: 1280px)	≥ 1280px
-xxl   @media all and (max-width: 1536px)	≥ 1536px
