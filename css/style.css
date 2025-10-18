@@ -13,8 +13,8 @@
   line-height: 1.5;
 }
 
-/* colors */
 :root {
+  /* colors */
   /* header */
   --header-background: #ffffff;
   --header-font-black: #000000;
@@ -124,6 +124,10 @@ h2 {
 h3 {
   font-size: 24px;
   font-weight: 700;
+}
+
+i {
+  color: #000;
 }
 
 section,
@@ -257,13 +261,17 @@ header .container .logo a span {
   transform: translate(0, -2px);
 }
 /* menu-slider */
-/* header .b{
+.menu-slider {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: #000c;
+  backdrop-filter: blur(2px);
+  pointer-events: none;
+  opacity: 0;
+  transition: .2s ease-in-out;
 }
 .slider {
   background-color: var(--header-background);
@@ -274,7 +282,10 @@ header .container .logo a span {
   width: 320px;
   height: 100vh;
   padding-inline: 24px;
-  display: none;
+}
+.menu-slider:target {
+  opacity: 1;
+  pointer-events: all;
 }
 .slider .head {
   display: flex;
@@ -292,8 +303,10 @@ header .container .logo a span {
 .slider .head .close-icon {
   padding: 8px;
 }
-.slider .head .close-icon:target{
-  display: none;
+.slider .head .close-icon:hover,
+.slider .head .close-icon:hover i {
+  background-color: #ffe2e2;
+  color: #ff8d6b;
 }
 .slider-nav ul {
   margin-bottom: 24px;
@@ -316,14 +329,14 @@ header .container .logo a span {
   width: 100%;
   font-size: 18px;
   font-weight: 700;
-  padding-block: 16px;
+  padding-block: 12px;
   background-color: var(--header-button);
   cursor: pointer;
   transition: 0.1s ease-in-out;
 }
-.slider-button:hover{
+.slider-button:hover {
   transform: translateY(-5px);
 }
-.slider:target{
+.slider:target {
   display: block;
-} */
+}
