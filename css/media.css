@@ -5,22 +5,26 @@ lg    @media all and (min-width: 1024px)
 xl    @media all and (min-width: 1280px)
 xxl   @media all and (min-width: 1536px)
 */
+
+
+/* -------------- Header -------------- */
 @media all and (min-width: 640px) {
   .header-nav,
-  .header-button {
+  .header-button{
     display: none;
   }
-  .menu-icon{
-    display: block;
-  }
 }
-
 @media all and (min-width: 1280px) {
   .header-nav,
-  .header-button {
+  .header-button{
     display: block;
   }
   .menu-icon{
     display: none;
   }
 }
+/* -------------- HOME -------------- */
+/* -------------- LATEST ARTICLES -------------- */
+/* -------------- AUTHORS -------------- */
+/* -------------- COMMUNITY -------------- */
+/* -------------- Footer -------------- */
