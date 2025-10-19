@@ -1,25 +1,67 @@
 /* 
-sm    @media all and (min-width: 640px)
-md    @media all and (min-width: 768px)
-lg    @media all and (min-width: 1024px)
-xl    @media all and (min-width: 1280px)
-xxl   @media all and (min-width: 1536px)
+
+Mobile Small
+@media (min-width: 480px) {}
+
+Mobile
+@media (min-width: 768px) {}
+
+Tablet
+@media (min-width: 1024px) {}
+
+Laptop
+@media (min-width: 1280px) {}
+
+Desktop
+@media (min-width: 1536px) {}
+
 */
 
+/* -------------- all screens -------------- */
+
+/* Mobile Small */
+@media (min-width: 480px) {
+  .container {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+/* Mobile */
+@media (min-width: 768px) {
+}
+
+/* Tablet */
+@media (min-width: 1024px) {
+}
+
+/* Laptop */
+@media (min-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1536px) {
+  .container {
+    width: 85%;
+  }
+}
 
 /* -------------- Header -------------- */
-@media all and (min-width: 640px) {
+@media all and (min-width: 480px) {
   .header-nav,
-  .header-button{
+  .header-button {
     display: none;
   }
 }
 @media all and (min-width: 1280px) {
   .header-nav,
-  .header-button{
+  .header-button {
     display: block;
   }
-  .menu-icon{
+  .menu-icon {
     display: none;
   }
 }

@@ -1,9 +1,7 @@
-/* font */
-@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
-
 /*  global rules */
 * {
-  font-family: "Play", sans-serif;
+  font-family: EXO, sans-serif;
+  color: var(--black);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,16 +11,54 @@
   line-height: 1.5;
 }
 
+/* colors */
 :root {
-  /* colors */
   --white: #ffffff;
   --black: #000;
   --gray: #525252;
+  --red: #fb2c36;
+  --blue: #2b7fff;
 
   /* header */
   --header-font-orange: #ff6900;
   --header-button: #ffd15b;
   --header-nav-hover: #ff7a50;
+}
+/* border */
+.border-1 {
+  border: 1px solid var(--black);
+}
+.border-2 {
+  border: 2px solid var(--black);
+}
+.border-3 {
+  border: 3px solid var(--black);
+}
+.border-4 {
+  border: 4px solid var(--black);
+}
+
+/* shadow */
+.shadow-1 {
+  box-shadow: 1px 1px var(--black);
+}
+.shadow-2 {
+  box-shadow: 2px 2px var(--black);
+}
+.shadow-3 {
+  box-shadow: 3px 3px var(--black);
+}
+.shadow-4 {
+  box-shadow: 4px 4px var(--black);
+}
+.shadow-5 {
+  box-shadow: 5px 5px var(--black);
+}
+
+section,
+footer {
+  padding-block: 80px;
+  scroll-margin: 24px;
 }
 
 img {
@@ -47,49 +83,6 @@ h3 {
 
 i {
   color: var(--black);
-}
-
-section,
-footer {
-  padding-block: 80px;
-  scroll-margin: 24px;
-}
-
-.border-1 {
-  border: 1px solid var(--black);
-}
-
-.border-2 {
-  border: 2px solid var(--black);
-}
-
-.border-3 {
-  border: 3px solid var(--black);
-}
-
-.border-4 {
-  border: 4px solid var(--black);
-}
-
-.shadow-1 {
-  box-shadow: 1px 1px var(--black);
-}
-
-.shadow-2 {
-  box-shadow: 2px 2px var(--black);
-}
-
-.shadow-3 {
-  box-shadow: 3px 3px var(--black);
-}
-
-.shadow-4 {
-  box-shadow: 4px 3px var(--black);
-}
-
-.container {
-  width: 85%;
-  margin: auto;
 }
 
 /* title */
@@ -120,6 +113,7 @@ header {
   position: fixed;
   width: 100%;
   padding-block: 16px;
+  z-index: 999;
 }
 header .container {
   display: flex;
@@ -190,7 +184,7 @@ header .container .logo a span {
   backdrop-filter: blur(2px);
   pointer-events: none;
   opacity: 0;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 .slider {
   background-color: var(--white);
@@ -260,3 +254,104 @@ header .container .logo a span {
 .slider-button:hover {
   transform: translateY(-5px);
 }
+
+/* ----------------------------------------------------------------- */
+/* -------------- HOME -------------- */
+.home{
+  background-color: #fff085;
+}
+/* shapes in background */
+.home .bg-shapes {
+  position: relative;
+  width: 100%;
+  padding-block: 100px;
+}
+.home .bg-shapes .shape {
+  position: absolute;
+  width: 135px;
+  height: 135px;
+  opacity: 10%;
+}
+.home .bg-shapes .shape:nth-child(1) {
+  background-color: var(--black);
+  transform: rotate(12deg);
+  left: 5%;
+  top: 6%;
+}
+.home .bg-shapes .shape:nth-child(2) {
+  background-color: var(--blue);
+  transform: rotate(45deg);
+  left: 40%;
+  bottom: 10%;
+}
+.home .bg-shapes .shape:nth-child(3) {
+  background-color: var(--red);
+  transform: rotate(45deg);
+  right: 10%;
+  top: 30%;
+}
+.home .container {
+  position: relative;
+  justify-content: space-between;
+  /* height: 100vh; */
+}
+.home-content {
+  position: relative;
+  width: 45%;
+}
+.home-content span.border-1 {
+  position: absolute;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 16px;
+  transform: rotate(355deg);
+  bottom: 102%;
+}
+.home-content h1 span {
+  text-shadow: 3px 3px var(--black);
+  line-height: 0px;
+}
+.home-content h1 span:nth-child(3) {
+  color: var(--red);
+}
+.home-content h1 span:nth-child(5) {
+  color: var(--blue);
+}
+.home-content p{
+  font-size: 24px;
+  font-weight: 500;
+  background-color: var(--white);
+  padding: 16px;
+  margin-block: 24px;
+}
+.home-btn button{
+  position: relative;
+  padding: 16px 32px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.home-btn span{
+  padding: 16px 32px;
+  background-color: var(--black);
+}
+.home-btn button:nth-child(1){
+  background-color: var(--black);
+  margin-right: 16px;
+}
+.home-btn button:nth-child(2){
+  background-color: var(--white);
+}
+.home-btn button:nth-child(1),
+.home-btn button:nth-child(1) i{
+  color: var(--white);
+}
+/* ----------------------------------------------------------------- */
+/* -------------- LATEST ARTICLES -------------- */
+/* ----------------------------------------------------------------- */
+/* -------------- AUTHORS -------------- */
+/* ----------------------------------------------------------------- */
+/* -------------- COMMUNITY -------------- */
+/* ----------------------------------------------------------------- */
+/* -------------- Footer -------------- */
