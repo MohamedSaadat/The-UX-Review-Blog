@@ -317,7 +317,7 @@ main {
 .home-content,
 .home-image {
   position: relative;
-  width: 45%;
+  width: 47%;
 }
 .home-content span.border-1 {
   position: absolute;
@@ -393,7 +393,11 @@ main {
   background-image: url(../images/hero-img.png);
   background-size: cover;
   background-position: center;
-  transform: rotate(3deg);
+  transform: rotate(2deg) translate(0px, 15px);;
+  transition: .2s ease-in-out;
+}
+.home-image .image:hover {
+  transform: rotate(2deg) translate(0px, 15px);
 }
 /* ----------------------------------------------------------------- */
 /* -------------- LATEST ARTICLES -------------- */
