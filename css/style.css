@@ -69,7 +69,8 @@ footer {
   scroll-margin: 24px;
 }
 
-.container{
+.container {
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,6 +182,7 @@ header .container .logo a span {
   background-color: var(--white);
   transition: 0.2s ease-in-out;
   margin-bottom: 2px;
+  display: none;
 }
 .menu-icon:hover {
   transform: translate(0, -2px);
@@ -272,13 +274,10 @@ header .container .logo a span {
 main {
   background-color: #fff185;
   padding-top: 180px;
+  position: relative;
 }
 /* ----------------------------------------------------------------- */
 /* -------------- HOME -------------- */
-main {
-  position: relative;
-}
-
 /* shapes in background */
 .home .bg-shapes {
   position: absolute;
@@ -296,20 +295,20 @@ main {
 .home .bg-shapes .shape:nth-child(1) {
   background-color: var(--black);
   transform: rotate(12deg);
-  left: 5%;
-  top: 6%;
+  left: 50px;
+  top: 60px;
 }
 .home .bg-shapes .shape:nth-child(2) {
   background-color: var(--blue);
   transform: rotate(45deg);
-  left: 40%;
-  bottom: 10%;
+  left: 650px;
+  bottom: 60px;
 }
 .home .bg-shapes .shape:nth-child(3) {
   background-color: var(--red);
   transform: rotate(45deg);
-  right: 10%;
-  top: 30%;
+  right: 100px;
+  top: 150px;
 }
 
 /* container */
@@ -333,7 +332,6 @@ main {
 /* title */
 .home-content h1 span {
   text-shadow: 3px 3px var(--black);
-  line-height: 0px;
 }
 .home-content h1 span:nth-child(3) {
   color: var(--red);
@@ -350,18 +348,21 @@ main {
   margin-block: 24px;
 }
 /* home-btn */
+.home-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
 .home-btn button {
   position: relative;
-  width: 265px;
+  width: 45%;
   padding-block: 16px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   transition: 0.2s ease-in-out;
   cursor: pointer;
 }
 .home-btn button:nth-child(1) {
   background-color: var(--black);
-  margin-right: 16px;
 }
 .home-btn button:nth-child(2) {
   background-color: var(--white);

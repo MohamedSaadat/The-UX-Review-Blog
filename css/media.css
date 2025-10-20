@@ -1,30 +1,93 @@
-/* 
-
-Small Mobile
-@media (min-width: 320px) {}
-
-Medium Mobile
-@media (min-width: 480px) {}
-
-Large Mobile
-@media (min-width: 768px) {}
-
-Tablet
-@media (min-width: 1024px) {}
-
-Laptop
-@media (min-width: 1280px) {}
-
-Desktop
-@media (min-width: 1536px) {}
-
-*/
-
-/* -------------- all screens -------------- */
 /* Small Mobile */
 @media (min-width: 320px) {
   .container {
     width: 95%;
+  }
+  /* -------------- Header -------------- */
+  /* logo */
+  header .container .logo a {
+    font-size: 22px;
+  }
+  /* nav */
+  .header-nav ul,
+  .header-button {
+    display: none;
+  }
+  /* menu-icon */
+  .menu-icon {
+    padding: 4px;
+    display: block;
+  }
+  /* menu-slider */
+  .slider {
+    width: 260px;
+  }
+  .slider .head span {
+    font-size: 18px;
+  }
+  .slider .head .close-icon {
+    padding: 4px;
+  }
+  .slider-nav ul li a {
+    font-size: 16px;
+  }
+  .slider-button {
+    width: 95%;
+    font-size: 16px;
+    padding-block: 8px;
+  }
+
+  /* -------------- HOME -------------- */
+  /* shapes in background */
+  .home .bg-shapes .shape:nth-child(1) {
+    left: 5px;
+  }
+  .home .bg-shapes .shape:nth-child(2) {
+    left: 140px;
+    bottom: 40px;
+  }
+  .home .bg-shapes .shape:nth-child(3) {
+    right: 40px;
+  }
+  /* container */
+  .home .container {
+    display: block;
+  }
+  /* home-content */
+  .home-content {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .home-content span.border-1 {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+  /* title */
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  /* paragraph */
+  .home-content p {
+    font-size: 18px;
+  }
+  /* home-btn */
+  .home-btn button {
+    padding-block: 12px;
+    font-size: 16px;
+  }
+  /* home-image */
+  .home-image span {
+    top: -10px;
+    right: -10px;
+    font-size: 12px;
+  }
+  .home-image {
+    width: 95%;
+  }
+  .home-image .image {
+    height: 300px;
+    transform: rotate(2deg);
   }
 }
 
@@ -33,53 +96,7 @@ Desktop
   .container {
     width: 90%;
   }
-}
-
-/* Large Mobile */
-@media (min-width: 768px) {
-}
-
-/* Tablet */
-@media (min-width: 1024px) {
-  .container {
-    width: 85%;
-  }
-}
-
-/* Laptop */
-@media (min-width: 1280px) {
-  .container {
-    width: 80%;
-  }
-}
-
-/* Desktop */
-@media (min-width: 1536px) {
-}
-
-/* -------------- Header -------------- */
-/* Small Mobile */
-@media all and (min-width: 320px) {
-  .header-nav,
-  .header-button {
-    display: none;
-  }
-  /* logo */
-  header .container .logo a {
-    font-size: 22px;
-  }
-  /* menu-icon */
-  .menu-icon {
-    padding: 4px;
-  }
-  /* menu-slider */
-  .slider {
-    width: 250px;
-  }
-}
-
-/* Medium Mobile */
-@media (min-width: 480px) {
+  /* -------------- Header -------------- */
   /* logo */
   header .container .logo a {
     font-size: 30px;
@@ -92,91 +109,31 @@ Desktop
   .slider {
     width: 320px;
   }
-}
-
-/* Laptop */
-@media all and (min-width: 1280px) {
-  .header-nav,
-  .header-button {
-    display: block;
+  .slider .head span {
+    font-size: 24px;
   }
-  .menu-icon {
-    display: none;
+  .slider .head .close-icon {
+    padding: 8px;
   }
-}
-/* -------------- HOME -------------- */
-/* Small Mobile */
-@media (min-width: 320px) {
-  .home .container {
-    display: block;
-  }
-  /* home-content */
-  .home-content {
-    margin-bottom: 60px;
-  }
-  .home-content span.border-1 {
-    font-size: 12px;
-    padding: 10px 14px;
-  }
-  /* title */
-  h1 {
-    font-size: 40px;
-    font-weight: 800;
-  }
-  .home-content h1 span {
-    text-shadow: 2px 2px var(--black);
-  }
-  /* paragraph */
-  .home-content p {
-    font-size: 18px;
-  }
-  /* home-btn */
-  .home-btn button {
-    width: 40%;
-    padding-block: 16px;
-    font-size: 14px;
-  }
-  /* home-image */
-  .home-image span {
-    top: -10px;
-    right: 0px;
-  }
-  .home-image .image {
-    width: 95%;
-    height: 300px;
-    transform: rotate(2deg);
-  }
-}
-
-/* Medium Mobile */
-@media (min-width: 480px) {
-  /* title */
-  h1 {
-    font-size: 60px;
-    font-weight: 900;
-  }
-  /* paragraph */
-  .home-content p {
+  .slider-nav ul li a {
     font-size: 20px;
   }
-  .home-content h1 span {
-    text-shadow: 3px 3px var(--black);
+  .slider-button {
+    width: 100%;
+    font-size: 18px;
+    padding-block: 12px;
   }
-  .home-image .image {
-    transform: rotate(3deg);
-  }
-}
 
-/* Large Mobile */
-@media (min-width: 768px) {
+  /* -------------- HOME -------------- */
+  /* home-content */
   .home-content span.border-1 {
-    font-size: 16px;
+    font-size: 14px;
     padding: 12px 16px;
   }
   /* title */
   h1 {
-    font-size: 72px;
-    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
   }
   /* paragraph */
   .home-content p {
@@ -184,36 +141,101 @@ Desktop
   }
   /* home-btn */
   .home-btn button {
-    width: 40%;
     padding-block: 16px;
     font-size: 20px;
   }
   /* home-image */
   .home-image span {
-    top: -10px;
-    right: 15px;
+    right: -15px;
+    font-size: 16px;
+  }
+  .home-image {
+    width: 100%;
   }
   .home-image .image {
     height: 400px;
+    transform: rotate(3deg);
+  }
+}
+
+/* Large Mobile */
+@media (min-width: 768px) {
+  /* -------------- HOME -------------- */
+  /* title */
+  h1 {
+    font-size: 72px;
+    line-height: 90px;
   }
 }
 
 /* Tablet */
 @media (min-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+  /* -------------- HOME -------------- */
+  /* shapes in background */
+  .home .bg-shapes .shape:nth-child(1) {
+    left: 50px;
+    top: 60px;
+  }
+  .home .bg-shapes .shape:nth-child(2) {
+    left: 650px;
+    bottom: 60px;
+  }
+  .home .bg-shapes .shape:nth-child(3) {
+    right: 100px;
+    top: 150px;
+  }
+  /* container */
   .home .container {
     display: flex;
+  }
+  /* home-content */
+  .home-content,
+  .home-image {
+    position: relative;
+    width: 47%;
+  }
+  /* title */
+  h1 {
+    font-size: 65px;
   }
 }
 
 /* Laptop */
 @media (min-width: 1280px) {
+  .container {
+    width: 90%;
+  }
+  /* ---------- Header ---------- */
+  /* nav */
+  .header-nav ul {
+    display: flex;
+  }
+  .header-button {
+    display: block;
+  }
+  /* menu-icon */
+  .menu-icon {
+    display: none;
+  }
+  /* -------------- HOME -------------- */
+  /* home-content */
+  .home-content,
+  .home-image {
+    position: relative;
+    width: 45%;
+  }
+  /* title */
+  h1 {
+    font-size: 72px;
+  }
 }
 
 /* Desktop */
 @media (min-width: 1536px) {
+  .container {
+    width: 80%;
+  }
 }
-
-/* -------------- LATEST ARTICLES -------------- */
-/* -------------- AUTHORS -------------- */
-/* -------------- COMMUNITY -------------- */
-/* -------------- Footer -------------- */
