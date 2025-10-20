@@ -54,11 +54,25 @@
 .shadow-5 {
   box-shadow: 5px 5px var(--black);
 }
+.shadow-6 {
+  box-shadow: 6px 6px var(--black);
+}
 
+main,
 section,
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--black);
   padding-block: 80px;
   scroll-margin: 24px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 img {
@@ -116,9 +130,7 @@ header {
   z-index: 999;
 }
 header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: auto;
   border-radius: 16px;
   padding: 10px 24px;
   background-color: var(--white);
@@ -256,21 +268,30 @@ header .container .logo a span {
 }
 
 /* ----------------------------------------------------------------- */
-/* -------------- HOME -------------- */
-.home{
-  background-color: #fff085;
+/* ---------- main ---------- */
+main {
+  background-color: #fff185;
+  padding-top: 180px;
 }
+/* ----------------------------------------------------------------- */
+/* -------------- HOME -------------- */
+main {
+  position: relative;
+}
+
 /* shapes in background */
 .home .bg-shapes {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding-block: 100px;
+  height: 100%;
+  opacity: 10%;
 }
 .home .bg-shapes .shape {
   position: absolute;
   width: 135px;
   height: 135px;
-  opacity: 10%;
 }
 .home .bg-shapes .shape:nth-child(1) {
   background-color: var(--black);
@@ -290,25 +311,26 @@ header .container .logo a span {
   right: 10%;
   top: 30%;
 }
-.home .container {
-  position: relative;
-  justify-content: space-between;
-  /* height: 100vh; */
-}
-.home-content {
+
+/* container */
+
+/* home-content */
+.home-content,
+.home-image {
   position: relative;
   width: 45%;
 }
 .home-content span.border-1 {
   position: absolute;
+  top: -60px;
   background-color: var(--black);
   color: var(--white);
   font-size: 14px;
   font-weight: 700;
   padding: 12px 16px;
   transform: rotate(355deg);
-  bottom: 102%;
 }
+/* title */
 .home-content h1 span {
   text-shadow: 3px 3px var(--black);
   line-height: 0px;
@@ -319,33 +341,58 @@ header .container .logo a span {
 .home-content h1 span:nth-child(5) {
   color: var(--blue);
 }
-.home-content p{
+/* paragraph */
+.home-content p {
   font-size: 24px;
   font-weight: 500;
   background-color: var(--white);
   padding: 16px;
   margin-block: 24px;
 }
-.home-btn button{
+/* home-btn */
+.home-btn button {
   position: relative;
-  padding: 16px 32px;
+  width: 265px;
+  padding-block: 16px;
   font-size: 20px;
   font-weight: 600;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
-.home-btn span{
-  padding: 16px 32px;
-  background-color: var(--black);
-}
-.home-btn button:nth-child(1){
+.home-btn button:nth-child(1) {
   background-color: var(--black);
   margin-right: 16px;
 }
-.home-btn button:nth-child(2){
+.home-btn button:nth-child(2) {
   background-color: var(--white);
 }
 .home-btn button:nth-child(1),
-.home-btn button:nth-child(1) i{
+.home-btn button:nth-child(1) i {
   color: var(--white);
+}
+.home-btn button:hover {
+  transform: translate(5px, 5px);
+  box-shadow: 0px 0px var(--black);
+}
+
+/* home-image */
+.home-image span {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  background-color: var(--red);
+  color: var(--white);
+  font-weight: 700;
+  padding: 8px 16px;
+  transform: rotate(15deg);
+  z-index: 1;
+}
+.home-image .image {
+  height: 400px;
+  background-image: url(../images/hero-img.png);
+  background-size: cover;
+  background-position: center;
+  transform: rotate(3deg);
 }
 /* ----------------------------------------------------------------- */
 /* -------------- LATEST ARTICLES -------------- */
