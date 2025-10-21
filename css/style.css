@@ -16,13 +16,21 @@
   --white: #ffffff;
   --black: #000;
   --gray: #525252;
-  --red: #fb2c36;
-  --blue: #2b7fff;
 
   /* header */
   --header-font-orange: #ff6900;
   --header-button: #ffd15b;
   --header-nav-hover: #ff7a50;
+
+  /* home */
+  --red: #fb2c36;
+  --blue: #2b7fff;
+
+  /* LATEST ARTICLES */
+  --yellow: #ffdf20;
+  --purple: #ad46ff;
+  --light-green: #7bf1a8;
+  --pink: #fda5d5;
 }
 /* border */
 .border-1 {
@@ -66,7 +74,7 @@ footer {
   align-items: center;
   border: 2px solid var(--black);
   padding-block: 80px;
-  scroll-margin: 24px;
+  scroll-margin: 50px;
 }
 
 .container {
@@ -379,8 +387,8 @@ main {
 /* home-image */
 .home-image span {
   position: absolute;
-  top: -10px;
-  right: -15px;
+  top: -50px;
+  right: -25px;
   background-color: var(--red);
   color: var(--white);
   font-weight: 700;
@@ -393,14 +401,253 @@ main {
   background-image: url(../images/hero-img.png);
   background-size: cover;
   background-position: center;
-  transform: rotate(2deg) translate(0px, 15px);;
-  transition: .2s ease-in-out;
+  transform: rotate(2deg) translate(0px, -24px);
+  transition: 0.2s ease-in-out;
 }
 .home-image .image:hover {
   transform: rotate(2deg) translate(0px, 15px);
 }
+
 /* ----------------------------------------------------------------- */
 /* -------------- LATEST ARTICLES -------------- */
+.latest-articles .container {
+  align-items: start;
+  padding-inline: 16px;
+}
+.container .scroll,
+.container .sticky {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.container .scroll {
+  width: 64%;
+  align-items: center;
+}
+.container .sticky {
+  width: 30%;
+  position: sticky;
+  top: 110px;
+}
+
+/* title */
+.scroll .scroll-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scroll .scroll-title span {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 16px;
+  transform: rotate(3deg);
+}
+
+/* card */
+.scroll .cards .card {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+.scroll .card,
+.scroll h3 {
+  transition: 0.2s ease-in-out;
+}
+.scroll .cards .card:nth-child(1):hover .content h3 {
+  color: var(--red);
+}
+.scroll .cards .card:nth-child(2):hover .content h3 {
+  color: var(--blue);
+}
+.scroll .cards .card:nth-child(3):hover .content h3 {
+  color: var(--purple);
+}
+.scroll .cards .card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px var(--black);
+}
+/* image */
+.scroll .image {
+  width: 23%;
+  height: 130px;
+  border: 2px solid var(--black);
+  display: flex;
+  align-items: stretch;
+}
+.image span,
+.content span {
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid var(--black);
+  width: fit-content;
+  height: fit-content;
+  padding: 4px 8px;
+}
+.scroll .card:nth-child(1) .image span {
+  background-color: var(--red);
+  color: var(--white);
+  transform: rotate(15deg) translate(-35px, -5px);
+}
+.scroll .card:nth-child(1) .content span {
+  transform: rotate(-2deg);
+  background-color: var(--yellow);
+}
+.scroll .card:nth-child(2) .image span {
+  background-color: var(--blue);
+  color: var(--white);
+  transform: rotate(-15deg) translate(-30px, -25px);
+}
+.scroll .card:nth-child(2) .content span {
+  transform: rotate(2deg);
+  background-color: var(--light-green);
+}
+.scroll .card:nth-child(3) .image span {
+  background-color: var(--purple);
+  color: var(--white);
+  transform: rotate(35deg) translate(-35px, 20px);
+}
+.scroll .card:nth-child(3) .content span {
+  transform: rotate(-2deg);
+  background-color: var(--pink);
+}
+
+/* content */
+.scroll .content {
+  width: 73%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.scroll .content p {
+  font-size: 18px;
+}
+.scroll .content ul {
+  display: flex;
+  gap: 45px;
+}
+.scroll .content ul li {
+  font-size: 14px;
+  font-weight: 600;
+}
+.scroll .content ul li:last-child i,
+.scroll .content ul li:last-child {
+  color: var(--red);
+}
+.latest-articles button {
+  background-color: var(--black);
+  width: 40%;
+  padding-block: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.latest-articles button,
+.latest-articles button i {
+  color: var(--white);
+}
+.latest-articles button:hover {
+  transform: translate(5px, 5px);
+  box-shadow: 0px 0px var(--black);
+}
+/* card 1 */
+.sticky .card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+}
+.sticky .card .item{
+  display: flex;
+  align-items: end; 
+  gap: 16px;
+  cursor: pointer;
+}
+.sticky .card .item-1 span,
+.sticky .card .item-1:hover h3 {
+  color: var(--red);
+}
+.sticky .card .item-2 span,
+.sticky .card .item-2:hover h3 {
+  color: var(--blue);
+}
+.sticky .card .item-3 span,
+.sticky .card .item-3:hover h3 {
+  color: var(--purple);
+}
+.sticky h2 {
+  font-size: 30px;
+}
+.sticky h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.sticky p {
+  font-size: 14px;
+  color: var(--gray);
+}
+.sticky span{
+  font-size: 36px;
+  font-weight: 900;
+}
+
+/* card 2 */
+.sticky ul{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sticky ul li{
+  font-weight: 700;
+  padding: 12px 16px;
+  border: 2px solid var(--black);
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.sticky ul li:nth-child(1){
+  background-color: #fef9c2;
+}
+.sticky ul li:nth-child(1):hover{
+  background-color: var(--yellow);
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px var(--black);
+}
+.sticky ul li:nth-child(2){
+  background-color: #dbfce7;
+}
+.sticky ul li:nth-child(2):hover{
+  background-color: var(--light-green);
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px var(--black);
+}
+.sticky ul li:nth-child(3){
+  background-color: #fce7f3;
+}
+.sticky ul li:nth-child(3):hover{
+  background-color: var(--pink);
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px var(--black);
+}
+.sticky ul li:nth-child(4){
+  background-color: #dbeafe;
+}
+.sticky ul li:nth-child(4):hover{
+  background-color: #8ec5ff;
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px var(--black);
+}
+.sticky ul li:nth-child(5){
+  background-color: #f3e8ff;
+}
+.sticky ul li:nth-child(5):hover{
+  background-color: #dab2ff;
+  transform: translate(-5px, -5px);
+  box-shadow: 5px 5px var(--black);
+}
 /* ----------------------------------------------------------------- */
 /* -------------- AUTHORS -------------- */
 /* ----------------------------------------------------------------- */

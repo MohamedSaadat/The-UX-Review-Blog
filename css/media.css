@@ -92,6 +92,21 @@
   .home-image .image:hover {
     transform: rotate(2deg) translate(-2px, 13px);
   }
+
+  /* -------------- LATEST ARTICLES -------------- */
+  .latest-articles .container {
+    flex-direction: column;
+  }
+  .container .scroll,
+  .container .sticky {
+    position: relative;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  /* card */
+.scroll .cards .card {
+  display: block;
+}
 }
 
 /* Medium Mobile */
@@ -173,7 +188,7 @@
     font-size: 72px;
     line-height: 90px;
   }
-   /* home-image */
+  /* home-image */
   .home-image span {
     top: -5px;
     right: -20px;
@@ -218,6 +233,18 @@
   h1 {
     font-size: 65px;
   }
+  /* -------------- LATEST ARTICLES -------------- */
+  .latest-articles .container {
+    flex-direction: row;
+  }
+  .container .scroll {
+  width: 64%;
+}
+.container .sticky {
+  width: 30%;
+  position: sticky;
+  top: 110px;
+}
 }
 
 /* Laptop */
@@ -248,11 +275,24 @@
   h1 {
     font-size: 72px;
   }
+  /* home-image */
+  .home-image span {
+    top: -50px;
+    right: -25px;
+    font-size: 16px;
+  }
+  .home-image .image {
+    height: 400px;
+    transform: rotate(2deg) translate(0px, -24px);
+  }
+  .home-image .image:hover {
+    transform: rotate(2deg) translate(-2px, -26px);
+  }
 }
 
 /* Desktop */
 @media (min-width: 1536px) {
   .container {
-    width: 80%;
+    width: 1280px;
   }
 }
