@@ -286,6 +286,11 @@
   .sticky ul li {
     font-size: 14px;
   }
+
+  /* -------------- COMMUNITY -------------- */
+  .community button {
+    font-size: 18px;
+  }
 }
 
 /* Large Mobile */
@@ -351,6 +356,10 @@
   }
   .sticky ul li {
     font-size: 16px;
+  }
+  /* -------------- COMMUNITY -------------- */
+  .community button {
+    font-size: 24px;
   }
 }
 
@@ -466,7 +475,7 @@
 
 /* Desktop */
 @media (min-width: 1536px) {
-  .container{
+  .container {
     width: 1280px;
   }
   .latest-articles .container {

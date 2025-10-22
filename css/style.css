@@ -134,10 +134,10 @@ i {
   position: absolute;
   width: 100px;
   height: 7px;
-  top: 170%;
+  top: 110px;
   left: 50%;
-  background-color: var(--black);
   transform: rotate(2deg) translateX(-50%);
+  background-color: var(--black);
 }
 .container .title span {
   color: var(--gray);
@@ -816,54 +816,132 @@ main {
   display: grid;
   gap: 64px;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin-top: 24px;
 }
 .community .content ul li {
   display: flex;
-  gap: 16px;
+  gap: 18px;
   font-size: 17px;
   font-weight: 600;
   align-items: center;
 }
-.community .content ul li i{
+.community .content ul li img {
+  width: 24px;
+}
+.community i {
   font-size: 20px;
   font-weight: 600;
   color: var(--white);
 }
-.flex-column-g32{
+.community button {
+  background-color: var(--black);
+  width: 70%;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  padding-block: 16px;
+  color: var(--white);
+  transition: 0.2s ease-in-out;
+}
+.community button:hover {
+  transform: translate(5px, 5px);
+  box-shadow: 0px 0px var(--black);
+}
+
+/* width */
+.w-50 {
+  width: 50px;
+}
+
+/* flex */
+.flex-column-g40 {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 40px;
 }
-.flex-column-g16{
+.flex-column-g24 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.flex-column-g16 {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+.flex {
+  display: flex;
+}
+
+/* font */
 .f34-900 {
   font-size: 34px;
+  font-weight: 900;
+}
+.f30-900{
+  font-size: 30px;
   font-weight: 900;
 }
 .f20-600 {
   font-size: 20px;
   font-weight: 600;
 }
-.padding-all-16{
+.f18-600 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.f18-700 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.f14-400 {
+  font-size: 14px;
+}
+
+/* spaces */
+.margin-b-16{
+  margin-bottom: 16px;
+}
+.padding-all-32 {
+  padding: 32px;
+}
+.padding-all-24 {
+  padding: 24px;
+}
+.padding-all-16 {
   padding: 16px;
 }
-.padding-all-10{
+.padding-all-10 {
   padding: 10px;
 }
-.bg-red{
+.gap-16{
+  gap: 16px;
+}
+
+/* colors */
+.bg-red {
   background-color: var(--red);
 }
-.bg-blue{
+.bg-light-pink {
+  background-color: #fef2f2;
+}
+.bg-light-blue {
+  background-color: #eff6ff;
+}
+.bg-light-purple {
+  background-color: #faf5ff;
+}
+.bg-blue {
   background-color: var(--blue);
 }
-.bg-purple{
+.bg-purple {
   background-color: var(--purple);
 }
-.bg-green{
+.bg-green {
   background-color: #00c950;
+}
+.co-gray{
+  color: var(--gray);
 }
 /* ----------------------------------------------------------------- */
 /* -------------- Footer -------------- */
