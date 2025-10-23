@@ -407,6 +407,19 @@
     width: 80%;
   }
 }
+@media (max-width: 1024px) {
+  .categories {
+    padding: 0;
+  }
+  footer .grid {
+    gap: 80px;
+  }
+  .span-div{
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+}
 
 /* Laptop */
 @media (min-width: 1280px) {

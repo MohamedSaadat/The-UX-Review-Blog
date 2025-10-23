@@ -39,6 +39,7 @@ body::selection {
   /* AUTHORS */
   --background-yellow: #ffd230;
 }
+
 /* border */
 .border-1 {
   border: 1px solid var(--black);
@@ -51,6 +52,9 @@ body::selection {
 }
 .border-4 {
   border: 4px solid var(--black);
+}
+.border-5-b {
+  border-bottom: 5px solid var(--white);
 }
 
 /* shadow */
@@ -225,11 +229,17 @@ i {
 .margin-l-24 {
   margin-left: 24px;
 }
+.margin-b-16 {
+  margin-bottom: 16px;
+}
+.margin-b-24 {
+  margin-bottom: 24px;
+}
 .margin-b-32 {
   margin-bottom: 32px;
 }
-.margin-b-16 {
-  margin-bottom: 16px;
+.padding-b-32 {
+  padding-bottom: 32px;
 }
 .padding-all-32 {
   padding: 32px;
@@ -243,8 +253,14 @@ i {
 .padding-all-10 {
   padding: 10px;
 }
+.padding-64{
+  padding-inline: 64px;
+}
 .gap-16 {
   gap: 16px;
+}
+.gap-24 {
+  gap: 24px;
 }
 
 /* colors */
@@ -1003,11 +1019,29 @@ footer .icon i {
   font-size: 24px;
 }
 
+/* 2nd div */
+footer .link:hover{
+  color: var(--yellow);
+}
+
+/* 3rd div */
+footer form input{
+  width: 100%;
+  padding: 20px;
+  background-color: var(--black);
+  border: 1px solid var(--white);
+  margin-bottom: 16px;
+}
+footer form input:focus{
+  border-color: var(--yellow);
+}
+
 /* button */
 .footer-button {
-  padding: 8px 16px;
+  width: 100%;
+  padding-block: 16px;
   background-color: #ffdf20;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -1015,4 +1049,16 @@ footer .icon i {
 .footer-button:hover {
   background-color: #fdc700;
   transform: translate(3px, 3px);
+}
+
+/* span div */
+footer .span-div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }

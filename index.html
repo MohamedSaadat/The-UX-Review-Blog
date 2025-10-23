@@ -508,54 +508,62 @@
     <footer>
       <div class="container">
         <!-- flex div -->
-        <div class="flex-row w-100p margin-b-32">
-          <!-- 1st div -->
-          <div class="w-400">
-            <div class="flex gap-16 margin-b-32">
-              <div class="icon">
-                <i class="fa-solid fa-pen-nib"></i>
+        <div class="w-100p margin-b-32 border-5-b padding-b-32">
+          <div class="grid">
+            <!-- 1st div -->
+            <div>
+              <div class="flex gap-16 margin-b-32">
+                <div class="icon">
+                  <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h2 class="f30-900">THE UX REVIEW</h2>
               </div>
-              <h2 class="f30-900">THE UX REVIEW</h2>
+              <p class="f18">
+                Raw, unfiltered thoughts on tech, design, and digital culture.
+                No compromise, no corporate speak, just brutal truth that
+                matters.
+              </p>
             </div>
-            <p class="f18">
-              Raw, unfiltered thoughts on tech, design, and digital culture. No
-              compromise, no corporate speak, just brutal truth that matters.
-            </p>
-          </div>
 
-          <!-- 2nd div -->
-          <div>
-            <h3 class="f24-900 margin-b-32">CATEGORIES</h3>
-            <ul class="flex-column-g16 margin-l-24">
-              <li><a class="f18-600" href="#home">TECH</a></li>
-              <li><a class="f18-600" href="#home">DESIGN</a></li>
-              <li><a class="f18-600" href="#home">CULTURE</a></li>
-              <li><a class="f18-600" href="#home">OPINION</a></li>
-              <li><a class="f18-600" href="#home">TUTORIALS</a></li>
-            </ul>
-          </div>
+            <!-- 2nd div -->
+            <div class="categories padding-64">
+              <h3 class="f24-900 margin-b-32">CATEGORIES</h3>
+              <ul class="flex-column-g16">
+                <li><a class="link f18-600" href="#home">TECH</a></li>
+                <li><a class="link f18-600" href="#home">DESIGN</a></li>
+                <li><a class="link f18-600" href="#home">CULTURE</a></li>
+                <li><a class="link f18-600" href="#home">OPINION</a></li>
+                <li><a class="link f18-600" href="#home">TUTORIALS</a></li>
+              </ul>
+            </div>
 
-          <!-- 3rd div -->
-          <form class="w-400">
-            <h3>NEWSLETTER</h3>
-            <p class="f18">
-              Get brutal insights delivered weekly. No spam, just truth that
-              cuts through the noise.
-            </p>
-            <input name="user-email" style="display: block;" placeholder="YOUR EMAIL ADDRESS" type="email" />
-            <button type="submit" class="footer-button">
-              SUBSCRIBE NOW
-            </button>
-          </form>
+            <!-- 3rd div -->
+            <form>
+              <h3 class="f24-900 margin-b-32">NEWSLETTER</h3>
+              <p class="f18 margin-b-24">
+                Get brutal insights delivered weekly. No spam, just truth that
+                cuts through the noise.
+              </p>
+              <input
+                name="user-email"
+                style="display: block"
+                placeholder="YOUR EMAIL ADDRESS"
+                type="email"
+              />
+              <button type="submit" class="footer-button">SUBSCRIBE NOW</button>
+            </form>
+          </div>
         </div>
 
         <!-- span div -->
-        <div>
+        <div class="span-div">
           <span>© 2025 The UX Review. ALL RIGHTS RESERVED. STAY BRUTAL.</span>
-          <ul>
-            <li><a class="f16-600" href="index.html">PRIVACY POLICY</a></li>
-            <li><a class="f16-600" href="index.html">TERMS OF USE</a></li>
-            <li><a class="f16-600" href="index.html">COOKIE POLICY</a></li>
+          <ul class="flex gap-24">
+            <li>
+              <a class="link f16-600" href="index.html">PRIVACY POLICY</a>
+            </li>
+            <li><a class="link f16-600" href="index.html">TERMS OF USE</a></li>
+            <li><a class="link f16-600" href="index.html">COOKIE POLICY</a></li>
           </ul>
         </div>
       </div>
