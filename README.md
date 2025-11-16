@@ -9,6 +9,7 @@ This project focuses on presenting UX case studies and design critiques in a rea
 
 ![HTML Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=fff)
 ![CSS Badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=fff)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-green?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-blue?style=for-the-badge)
 
