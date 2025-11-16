@@ -102,7 +102,10 @@ You can modify and reuse it freely.
 
 ## 📧 Contact
 
-If you’d like to collaborate or discuss UX/UI:
+If you’d like to collaborate or discuss UI/UX or front-end design:
 
 **Author:** Mohamed Saadat
+
+**Email:** mohamed93saadat@gmail.com
+
 **GitHub:** [https://github.com/MohamedSaadat](https://github.com/MohamedSaadat)
