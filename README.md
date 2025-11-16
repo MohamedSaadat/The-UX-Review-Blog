@@ -67,10 +67,8 @@ open index.html
 
 ## 🖥️ Live Demo (Optional)
 
-If you plan to host it on GitHub Pages:
-
 ```
-https://username.github.io/The-UX-Review-Blog/
+https://mohamedsaadat.github.io/The-UX-Review-Blog/
 ```
 
 ## ✏️ How to Add New Blog Posts
