@@ -5,6 +5,15 @@ This project focuses on presenting UX case studies and design critiques in a rea
 
 ---
 
+## 📛 Project Badges
+
+![HTML Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=fff)
+![CSS Badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=fff)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-blue?style=for-the-badge)
+
+---
+
 ## 📌 Overview
 
 **The UX Review Blog** is a front-end project built using **pure HTML5 and CSS3**, without frameworks or JavaScript.
@@ -97,4 +106,3 @@ If you’d like to collaborate or discuss UX/UI:
 
 **Author:** Mohamed Saadat
 **GitHub:** [https://github.com/MohamedSaadat](https://github.com/MohamedSaadat)
-
