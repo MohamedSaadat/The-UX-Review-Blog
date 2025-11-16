@@ -65,7 +65,7 @@ open index.html
 
 ---
 
-## 🖥️ Live Demo (Optional)
+## 🖥️ Live Demo
 
 ```
 https://mohamedsaadat.github.io/The-UX-Review-Blog/
