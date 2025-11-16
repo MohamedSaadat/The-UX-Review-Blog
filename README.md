@@ -71,26 +71,6 @@ open index.html
 https://mohamedsaadat.github.io/The-UX-Review-Blog/
 ```
 
-## ✏️ How to Add New Blog Posts
-
-1. Duplicate the file `post.html`
-2. Rename it to something like:
-
-```
-post-ux-review-appname.html
-```
-
-3. Update:
-
-   * The title
-   * Article content
-   * Images
-   * Metadata section
-
-4. Link the article from the homepage (`index.html`).
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome!
