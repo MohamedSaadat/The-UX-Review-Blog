@@ -98,13 +98,3 @@ If you’d like to collaborate or discuss UX/UI:
 **Author:** Mohamed Saadat
 **GitHub:** [https://github.com/MohamedSaadat](https://github.com/MohamedSaadat)
 
----
-
-If you'd like, I can also:
-
-✅ Add stylish GitHub badges (stars, license, tech stack)
-✅ Add screenshots section to make it more professional
-✅ Generate a logo for the blog
-✅ Improve the wording/style further
-
-Just tell me what you prefer!
